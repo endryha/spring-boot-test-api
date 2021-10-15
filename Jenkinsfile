@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Build Docker image') {
             steps {
-                sh './gradlew bootBuildImage'
+                sh './gradlew bootBuildImage --stacktrace'
             }
         }
     }
