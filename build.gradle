@@ -8,6 +8,10 @@ group = 'com.hla.test'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
+bootBuildImage {
+    imageName = "endryha/spring-boot-test-api"
+}
+
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
